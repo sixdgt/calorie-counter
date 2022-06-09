@@ -1,0 +1,25 @@
+{% extends 'layouts/base.html' %}
+
+{% block page_title %}
+USER | DASHBOARD
+{% endblock %}
+
+{% block custom_css %}
+    <style>
+        .main-content {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(255, 147, 69);
+            color: aliceblue;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+
+{% block page_content %}
+<h1>This is a dashbaord page for users.</h1>
+<div class="main-content">
+    <h1>This is our custom div</h1>
+</div>
+{% endblock %}
