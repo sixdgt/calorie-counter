@@ -18,8 +18,9 @@ USER | DASHBOARD
 {% endblock %}
 
 {% block page_content %}
-<h1>This is a dashbaord page for users.</h1>
+<h1>{{ page_content_title }}</h1>
+<hr>
 <div class="main-content">
-    <h1>This is our custom div</h1>
+    <h1>{{ page_content_body }}</h1>
 </div>
 {% endblock %}
