@@ -1,6 +1,6 @@
 from django import forms
 
-
+# import our custom models
 from ccapp.models import AppUser
 
 class LoginForm(forms.ModelForm):
