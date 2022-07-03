@@ -17,6 +17,10 @@ class RegistrationForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput)
     class Meta:
         fields = ('first_name', 'middle_name', 'last_name', 'contact', 'email',\
-            'gender', 'dob', 'blood_group', 'password')
+            'gender', 'dob', 'blood_group', 'password', 'address', 'major_health_issue')
 
         model = AppUser
+
+    
+# Anomalies
+# Insertion, Deleition and Update

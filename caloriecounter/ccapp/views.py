@@ -1,3 +1,4 @@
+from audioop import add
 from operator import ge
 from django.shortcuts import render
 from ccapp.models import AppUser
@@ -65,6 +66,8 @@ def user_register(request):
         dob = request.POST.get('dob')
         blood_group = request.POST.get('blood_group')
         password = request.POST.get('password')
+        address = request.POST.get('address')
+        major_health_issue = request.POST.get('major_health_issue')
 
         # creating user object 
         # method one non-parameterized constructor
@@ -86,7 +89,7 @@ def user_register(request):
                 contact=contact, email=email, gender=gender, \
                     dob=dob, blood_group=blood_group, password=password,\
                         created_at=datetime.now(),\
-                            verification_code=vc)
+                            verification_code=vc, address=address, major_health_issue=major_health_issue)
         # to store data
         user.save()
 
